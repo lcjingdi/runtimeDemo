@@ -13,6 +13,8 @@
 		181E13C31CC72138006F52FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181E13C11CC72138006F52FF /* Main.storyboard */; };
 		181E13C51CC72138006F52FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181E13C41CC72138006F52FF /* Assets.xcassets */; };
 		181E13C81CC72138006F52FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181E13C61CC72138006F52FF /* LaunchScreen.storyboard */; };
+		181E13D11CC721B3006F52FF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E13D01CC721B3006F52FF /* Person.m */; };
+		181E13D41CC775E5006F52FF /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E13D31CC775E5006F52FF /* Movie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		181E13C41CC72138006F52FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181E13C71CC72138006F52FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181E13C91CC72138006F52FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181E13CF1CC721B3006F52FF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		181E13D01CC721B3006F52FF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		181E13D21CC775E5006F52FF /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		181E13D31CC775E5006F52FF /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				181E13C61CC72138006F52FF /* LaunchScreen.storyboard */,
 				181E13C91CC72138006F52FF /* Info.plist */,
 				181E13B81CC72138006F52FF /* Supporting Files */,
+				181E13CF1CC721B3006F52FF /* Person.h */,
+				181E13D01CC721B3006F52FF /* Person.m */,
+				181E13D21CC775E5006F52FF /* Movie.h */,
+				181E13D31CC775E5006F52FF /* Movie.m */,
 			);
 			path = runtimeDemo;
 			sourceTree = "<group>";
@@ -151,6 +161,8 @@
 			files = (
 				181E13C01CC72138006F52FF /* ViewController.m in Sources */,
 				181E13BD1CC72138006F52FF /* AppDelegate.m in Sources */,
+				181E13D41CC775E5006F52FF /* Movie.m in Sources */,
+				181E13D11CC721B3006F52FF /* Person.m in Sources */,
 				181E13BA1CC72138006F52FF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +275,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = runtimeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ekwing.runtimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -274,10 +289,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = runtimeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ekwing.runtimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
