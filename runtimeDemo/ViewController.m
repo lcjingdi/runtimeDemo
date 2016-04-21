@@ -20,17 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-    [self getClassMethod];
     
 }
-
-
-
-
 
 
 //拦截并替换方法

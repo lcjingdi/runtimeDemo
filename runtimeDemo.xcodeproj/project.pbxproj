@@ -318,6 +318,7 @@
 				181E13CE1CC72138006F52FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
